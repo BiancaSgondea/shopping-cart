@@ -8,26 +8,32 @@ import React, { Component } from "react";
       {
         label: "#ID",
         field: "id",
+        minimal: "sm"
       },
       {
         label: "Description",
         field: "description",
+        minimal: "lg"
       },
       {
         label: "Price",
         field: "priece",
+        minimal: "sm"
       },
       {
         label: "Qty",
         field: "qty",
+        minimal: "sm"
       },
       {
         label: "Amount",
         field: "amount",
+        minimal: "sm"
       },
       {
         label: "",
         field: "handle",
+        minimal: "sm"
       }
     ];
 
@@ -56,12 +62,12 @@ import React, { Component } from "react";
 
     return (
       <MDBCol>
-        <MDBTable btn fixed className="cart-table">
+        <MDBTable btn className="cart-table">
           <MDBTableHead  columns={columns} color="default-color" />
           <MDBTableBody rows={rows} />
         </MDBTable>
         <hr/>
-        <h3 className="total">Total: {total}</h3> 
+        <h4 className="total">Total: {total}</h4> 
       </MDBCol>
     );
   }

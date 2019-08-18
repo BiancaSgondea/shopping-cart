@@ -9,7 +9,7 @@ export class Store extends Component {
         <MDBRow key= {item.id}>
         <MDBCol md="1"><p>{item.id}</p></MDBCol>
         <MDBCol md="8"><p>{item.description}</p></MDBCol>
-        <MDBCol md="1"><p className = "float-right">{item.price} <i class="fas fa-dollar-sign"></i></p></MDBCol>
+        <MDBCol md="1"><p className = "float-right">{item.price} $ </p></MDBCol>
         <MDBCol md="2"> <MDBBtn
         className = "float-right"
           outline
